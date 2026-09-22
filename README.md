@@ -32,13 +32,3 @@ A desktop implementation of Pyramid Solitaire made with Java and Swing. Cards ar
 Language: Java
 
 GUI Framework: Swing
-
-## Timelines and Milestones:
-
-- Week 1: Basic Setup
-- Week 2: Build Card and Deck classes
-- Week 3: Implement pyramid dealing and stock/waste logic
-- Week 4: Implement pairing and removal rules (including Kings)
-- Week 5: Build Swing GUI and card rendering
-- Week 6: Add mouse interaction and selection handling
-- Week 7: Add win/loss detection and testing
