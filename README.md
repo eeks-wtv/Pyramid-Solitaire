@@ -2,6 +2,8 @@
 
 ## About:
 
+Will have to say that i managed to recover the code but not the card images for this project. So the game runs fine but you can't really see anything because the original images are not there.
+
 A desktop implementation of Pyramid Solitaire made with Java and Swing. Cards are dealt into a 7-row pyramid, and the player removes free cards (or pairs with the waste pile) whose values sum to 13, working to clear the entire pyramid before running out of moves.
 
 ## Technical Details
