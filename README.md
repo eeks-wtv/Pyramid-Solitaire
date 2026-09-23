@@ -24,12 +24,6 @@ A desktop version of the classic Pyramid Solitaire card game, written in Java wi
 - Win and loss screens shown in the window, with one click to deal again
 - Automatic detection of when no moves are left
 
-## Getting Started
-
-### Requirements
-
-- Java 8 or later
-
 ## Project Structure
 
 | File | Purpose |
