@@ -37,4 +37,4 @@ The game logic lives in `PyramidSolitaireGame` and doesn't depend on the interfa
 
 ## Credits
 
-Card images: here([url](https://opengameart.org/content/playing-cards-vector-png))
+Card images: [here](https://opengameart.org/content/playing-cards-vector-png)
