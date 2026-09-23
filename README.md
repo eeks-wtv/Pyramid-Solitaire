@@ -2,7 +2,7 @@
 
 A desktop version of the classic Pyramid Solitaire card game, written in Java with Swing.
 
-![Screenshot](screenshot.png)
+![Screenshot](PyramidSolitaire-screenshot.png)
 
 ## Controls
 
