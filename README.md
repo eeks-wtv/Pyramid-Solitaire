@@ -1,36 +1,46 @@
 # Pyramid Solitaire
 
-## About:
+A desktop version of the classic Pyramid Solitaire card game, written in Java with Swing.
 
-Will have to say that i managed to recover the code but not the card images for this project. So the game runs fine but you can't really see anything because the original images are not there.
+![Screenshot](screenshot.png)
 
-A desktop implementation of Pyramid Solitaire made with Java and Swing. Cards are dealt into a 7-row pyramid, and the player removes free cards (or pairs with the waste pile) whose values sum to 13, working to clear the entire pyramid before running out of moves.
+## Controls
 
-## Technical Details
+| Action | How |
+|---|---|
+| Select a card | Click a free card in the pyramid |
+| Remove a pair | Select one card, then click a second card that adds up to 13 |
+| Remove a King | Click a free King |
+| Draw a card | Click the stock pile |
+| Use the waste card | Click the waste card, then click a free pyramid card that adds up to 13 with it |
+| Deselect | Click an empty area of the table |
+| Start over | Click **New Game** |
 
-### Key Features:
+## Features
 
-**Pyramid Layout:**
+- Overlapping pyramid layout with rounded cards and drop shadows
+- Free cards glow on hover; covered cards are dimmed
+- Live count of cards left in the pyramid and the stock
+- Win and loss screens shown in the window, with one click to deal again
+- Automatic detection of when no moves are left
 
-- 7-row, 28-card pyramid dealt from a shuffled 52-card deck
-- Cards are only playable once "free" (not covered by any card below them)
+## Getting Started
 
-**Stock & Waste Piles:**
-- Draw cards one at a time from the face-down stock
-- Waste pile shows the most recently drawn card, available for pairing
+### Requirements
 
-**Card Matching:**
-- Select any two free cards that sum to 13 to remove them
-- Match a free pyramid card with the waste card to remove both
-- Kings (value 13) can be removed on their own
+- Java 8 or later
 
-**Game State Handling:**
-- Win detection when the pyramid is fully cleared
-- Loss detection when no more valid moves remain
-- Automatically deals a new game after a win or loss
+## Project Structure
 
-### Platform:
+| File | Purpose |
+|---|---|
+| `card.java` | A single card: rank, suit, image loading, and drawing |
+| `deck.java` | Builds and shuffles a standard 52-card deck |
+| `PyramidSolitaireGame.java` | Game state and rules: the pyramid, stock, waste, and legal moves |
+| `PyramidSolitaireGUI.java` | The Swing window: drawing, mouse input, and win/loss detection |
 
-Language: Java
+The game logic lives in `PyramidSolitaireGame` and doesn't depend on the interface, so the rules can be tested or reused separately from the GUI.
 
-GUI Framework: Swing
+## Credits
+
+Card images: here([url](https://opengameart.org/content/playing-cards-vector-png))
